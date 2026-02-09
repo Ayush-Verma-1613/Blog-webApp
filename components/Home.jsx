@@ -32,7 +32,7 @@ const Home = () => {
     try {
       const res = await axios.get("/api/blog");
 
-      console.log("API Response:", res.data);
+      
 
       setBlogs(res.data);
     } catch (err) {
