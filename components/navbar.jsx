@@ -43,8 +43,8 @@ const Navbar = () => {
   if (loading) return null;
 
   return (
-    <nav className="z-[20000] py-4 md:py-8 px-4 md:px-8">
-      <div className="flex justify-between items-center">
+    <nav className="relative z-[20000] py-4 md:py-8 px-4 md:px-8">
+    <div className="flex justify-between items-center">
         {/* Logo */}
         <div className="text-xl md:text-2xl font-bold text-gray-600">
           BlogiFy
@@ -85,8 +85,8 @@ const Navbar = () => {
       </div>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && (
-        <div className="lg:hidden mt-4 bg-gray-900 rounded-2xl shadow-xl border border-gray-200 py-4 px-2 space-y-2">
+     {isMobileMenuOpen && (
+  <div className="lg:hidden absolute top-full left-0 w-full mt-2 bg-gray-900 rounded-2xl shadow-xl border border-gray-200 py-4 px-2 space-y-2">
           <Link
             href="/"
             className={`${getClass("/")} block px-4 py-3 rounded-lg hover:bg-gray-800 transition-colors text-base`}
