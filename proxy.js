@@ -4,7 +4,7 @@ export const config = {
     matcher: '/admin/:path*',
 }
 
-export const middleware = async (request) => {
+export const proxy = async (request) => {
     const cookies = request.cookies.get("AccessToken")
 
     if(!cookies)
