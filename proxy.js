@@ -13,7 +13,7 @@ export const middleware = async (request) => {
 
    const token = request.cookies.get("AccessToken")?.value;
 
-const api = await fetch(`${process.env.SERVER}/api/session`, {
+const api = await fetch(`${request.nextUrl.origin}/api/session`, {
   method: "POST",
   body: JSON.stringify({ token }),
   headers: {

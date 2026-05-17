@@ -16,7 +16,7 @@ const SlugRoute = async ({ params }) => {
   const { slug } = await params;
 
   const res = await fetch(
-    `${process.env.SERVER}/api/blog/slug/${slug}`,
+    `/api/blog/slug/${slug}`,
     { cache: "no-store" }
   );
 

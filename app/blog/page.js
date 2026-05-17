@@ -8,7 +8,7 @@ export const metadata = {
 };
 
 const BlogRouter = async () => {
-  const blog = await fetch(`${process.env.SERVER}/api/blog`, {
+  const blog = await fetch(`/api/blog`, {
     cache: "no-store",
   });
 
